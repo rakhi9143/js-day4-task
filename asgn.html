@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<input type="button" value="Roll The Dice" onClick="rollDice()" />
+<br />
+
+<script type="text/javascript">
+
+
+
+function rollDice()
+{
+    var x = prompt("enter your number");
+    var y = Math.floor( Math.random() * 6 ) + 1;
+
+     if( x == y )
+    {
+        
+        alert("Dice value is " + y + " Your win ");
+    }
+    else
+    {
+       alert("Dice value is " + y + " Your loose ");
+    }
+
+   
+}
+</script>
+</body>
+</html>
